@@ -17,7 +17,7 @@ public class NameValidator implements Validator{
 		String name = value.toString();
 		if(name.length() <2) {
 			FacesMessage errMsg = new FacesMessage(CHAMP);
-			throw new ValidatorException(errMsg);				
+			throw new ValidatorException(errMsg);		
 		}
 	}
 }
